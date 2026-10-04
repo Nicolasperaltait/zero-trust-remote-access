@@ -78,6 +78,21 @@ Decisiones del modelo actual:
 - una auditoria periodica del estado de la malla emite una metrica, y la
   alerta avisa si **deja de correr**
 
+## Leccion: desde la malla hay dos filtros, y el primero no deja registro
+
+Un servicio del NAS respondia bien en la red local y por la malla colgaba. Estuvo
+asi ocho dias sin que nadie lo notara, porque se habia probado solo desde el sitio.
+
+| Filtro | Que hacia | Deja registro en el host |
+|---|---|---|
+| Politica de la malla | no tenia permiso para ese puerto: cortaba el paquete | **no**: el paquete nunca llega |
+| Firewall del host | regla bien escrita | si, pero no habia nada que registrar |
+
+**Un puerto nuevo para usar desde afuera son dos cambios**: la regla del host y el
+permiso en la politica. Y se prueba **por la malla**, no por la red local, que toma
+otro camino. El destino quedo agregado a las pruebas de la propia politica: si
+alguien lo vuelve a cerrar, el cambio se rechaza solo.
+
 ## Hardening por rol
 
 Un hardening generico no sirve para todos los hosts.
