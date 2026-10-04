@@ -1,4 +1,4 @@
-# Contexto - homelab-acceso-remoto
+# Contexto - zero-trust-remote-access
 
 Ficha de lectura rapida: que es, por que existe y que muestra.
 
