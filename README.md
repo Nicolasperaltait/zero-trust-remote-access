@@ -2,6 +2,14 @@
 
 > Acceso remoto sin un solo puerto abierto, y agentes de IA que operan con minimo privilegio.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Zero_Trust-242424?style=for-the-badge&logo=tailscale&logoColor=white" alt="Zero Trust" />
+  <img src="https://img.shields.io/badge/0_puertos_abiertos-B91C1C?style=for-the-badge" alt="0 puertos abiertos" />
+  <img src="https://img.shields.io/badge/Tailnet_lock-1F2937?style=for-the-badge" alt="Tailnet lock" />
+  <img src="https://img.shields.io/badge/Minimo_privilegio-111827?style=for-the-badge&logo=linux&logoColor=white" alt="Minimo privilegio" />
+  <img src="https://img.shields.io/badge/Agentes_de_IA-0F766E?style=for-the-badge" alt="Agentes de IA" />
+</p>
+
 Este repositorio documenta, de forma sanitizada, el modelo de acceso remoto
 de una infraestructura productiva personal (homelab): una malla superpuesta con identidad por nodo y sin
 puertos entrantes, y un diseno de minimo privilegio especifico para agentes
