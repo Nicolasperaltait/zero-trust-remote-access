@@ -3,11 +3,11 @@
 > Acceso remoto sin un solo puerto abierto, y agentes de IA que operan con minimo privilegio.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Zero_Trust-242424?style=for-the-badge&logo=tailscale&logoColor=white" alt="Zero Trust" />
-  <img src="https://img.shields.io/badge/0_puertos_abiertos-B91C1C?style=for-the-badge" alt="0 puertos abiertos" />
-  <img src="https://img.shields.io/badge/Tailnet_lock-1F2937?style=for-the-badge" alt="Tailnet lock" />
-  <img src="https://img.shields.io/badge/Minimo_privilegio-111827?style=for-the-badge&logo=linux&logoColor=white" alt="Minimo privilegio" />
-  <img src="https://img.shields.io/badge/Agentes_de_IA-0F766E?style=for-the-badge" alt="Agentes de IA" />
+  <img src="https://img.shields.io/badge/Zero_Trust-7C3AED?style=for-the-badge&logo=tailscale&logoColor=white" alt="Zero Trust" />
+  <img src="https://img.shields.io/badge/0_puertos_abiertos-DC2626?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAxYTUgNSAwIDAgMC01IDV2NEg1djEzaDE0VjEwaC0yVjZhNSA1IDAgMCAwLTUtNXptLTMgOVY2YTMgMyAwIDAgMSA2IDB2NHoiLz48L3N2Zz4%3D&logoColor=white" alt="0 puertos abiertos" />
+  <img src="https://img.shields.io/badge/Tailnet_lock-1D4ED8?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAxIDMgNXY2YzAgNS42IDMuOCAxMC43IDkgMTIgNS4yLTEuMyA5LTYuNCA5LTEyVjV6Ii8%2BPC9zdmc%2B&logoColor=white" alt="Tailnet lock" />
+  <img src="https://img.shields.io/badge/Minimo_privilegio-1F2937?style=for-the-badge&logo=linux&logoColor=white" alt="Minimo privilegio" />
+  <img src="https://img.shields.io/badge/Agentes_de_IA-059669?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0zIDNoMTh2Nkgzem0wIDhoMTh2Nkgzem0wIDhoMTh2Mkgzek02IDUuNWgydjFINnptMCA4aDJ2MUg2eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Agentes de IA" />
 </p>
 
 Este repositorio documenta, de forma sanitizada, el modelo de acceso remoto
