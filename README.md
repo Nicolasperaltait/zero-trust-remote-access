@@ -17,6 +17,7 @@ infraestructura y no en la buena conducta del agente.
 
 ## Indice
 
+- [Ficha rapida para quien evalua](contexto.md)
 - [Seguridad y modelo de accesos](docs/01-seguridad-y-accesos.md)
 - [Caso de estudio: acceso de agentes de IA con minimo privilegio](docs/casos-de-estudio/01-acceso-de-agentes-de-ia-y-minimo-privilegio.md)
 
