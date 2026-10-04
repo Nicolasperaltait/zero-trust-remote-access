@@ -4,7 +4,7 @@
 
 ## Proposito
 
-Documentar el enfoque de acceso remoto y de minimo privilegio del homelab
+Documentar el enfoque de acceso remoto y de minimo privilegio de la infraestructura
 sin exponer detalles sensibles.
 
 ## Modelo de seguridad
@@ -160,7 +160,7 @@ seguridad comprueba **lo que tiene que fallar**:
 
 ## Idea central
 
-La seguridad del acceso remoto de este homelab no se apoya en una
+La seguridad del acceso remoto de esta infraestructura no se apoya en una
 herramienta. Se apoya en: ninguna exposicion entrante, segmentacion y minimo
 privilegio medido, automatizacion separada del operador, controles probados
 haciendolos fallar, y honestidad sobre lo que sigue abierto.
