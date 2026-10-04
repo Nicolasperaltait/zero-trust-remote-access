@@ -57,6 +57,16 @@ flowchart LR
     M -->|permisos por puerto| H[Hosts]
 ```
 
+## En vivo
+
+_Capturas reales del entorno, con nombres, direcciones, usuarios y versiones reemplazados por su funcion._
+
+![Tailscale con nodos firmantes, subnet router y exit node](docs/img/tailscale-maquinas.png)
+<sub>La malla: nodos firmantes (tailnet lock), subnet router y exit node.</sub>
+
+![Monitoreo propio de la malla en Grafana](docs/img/grafana-tailnet.png)
+<sub>Monitoreo propio de la malla: gateway, rutas aprobadas y paquetes descartados por la politica.</sub>
+
 ## Problema, decision, resultado
 
 | Problema | Por que importaba | Que se hizo | Resultado |
