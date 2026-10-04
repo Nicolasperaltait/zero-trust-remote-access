@@ -11,7 +11,7 @@ Es parte de un portfolio tecnico. **No es un laboratorio de prueba: es
 infraestructura productiva.** No tiene la escala de una empresa, pero tiene
 todas sus piezas -virtualizacion, red segmentada, DNS, almacenamiento, backups
 con copia externa, monitoreo, SIEM, acceso remoto y aplicaciones en uso- y
-funciona 24/7 sobre un hipervisor de tipo 1 en un servidor dedicado. Cuando
+funciona 24/7 sobre un hipervisor de tipo 1 (Proxmox VE) en un servidor dedicado. Cuando
 algo falla, el impacto es real.
 
 La documentacion operativa es privada. Esto es su version transformada
@@ -25,15 +25,15 @@ infraestructura y no en la buena conducta del agente.
 
 ## Escala chica, exigencia de produccion
 
-| Pieza | Que hace | Si falla |
+| Pieza | Con que | Si falla |
 |---|---|---|
-| Virtualizacion | hipervisor de tipo 1, una maquina por funcion | cae todo lo demas |
-| DNS interno | resolucion para todos los equipos y servicios | todo parece caido aunque este sano |
-| Red y acceso remoto | zonas por funcion, malla sin puertos abiertos | se pierde el aislamiento o el acceso desde afuera |
-| Almacenamiento y backups | NAS, backups nocturnos, copia cifrada externa, pruebas de restauracion | se pierde la capacidad de recuperar |
-| Monitoreo, SIEM y alertas | metricas, eventos de seguridad, avisos al telefono | los incidentes pasan sin que nadie se entere |
-| Aplicaciones propias | en uso diario; una envia correo real | se frena trabajo real |
-| Remoto de codigo | versionado y despliegue de esas aplicaciones | no hay donde versionar ni desde donde desplegar |
+| Virtualizacion | Proxmox VE, hipervisor de tipo 1; una maquina por funcion | cae todo lo demas |
+| DNS interno | Pi-hole, resolucion para todos los equipos y servicios | todo parece caido aunque este sano |
+| Red y acceso remoto | zonas por funcion; Tailscale sin puertos abiertos, politica por puerto | se pierde el aislamiento o el acceso desde afuera |
+| Almacenamiento y backups | OpenMediaVault, backups nocturnos, copia cifrada externa, pruebas de restauracion | se pierde la capacidad de recuperar |
+| Monitoreo y seguridad | Prometheus, Grafana, Wazuh y alertas al telefono | los incidentes pasan sin que nadie se entere |
+| Aplicaciones propias | Docker detras de Nginx Proxy Manager; una envia correo real | se frena trabajo real |
+| Codigo | Forgejo privado con integracion continua | no hay donde versionar ni desde donde desplegar |
 
 Lo mismo que en una empresa, en chico: cambios con plan y rollback, evidencia,
 alertas que avisan solas y controles que se prueban haciendolos fallar.
@@ -75,14 +75,14 @@ El detalle de cada uno, con lo que salio mal en el camino, esta en los casos de 
 
 ## Parte de una serie
 
-Este repo es una pieza de un proyecto mas grande: una **infraestructura
-productiva personal** (homelab), encendida 24/7 y documentada en cinco repos
-independientes. Cada uno se lee solo; juntos muestran el entorno completo.
+Este repo es una pieza de **[Homelab Prod](https://github.com/Nicolasperaltait/homelab)**:
+la vista completa de una infraestructura productiva, chica en escala y completa
+en piezas, encendida 24/7. Cada repo de la serie se lee solo; la portada los une.
 
 - [Zero Trust Remote Access](https://github.com/Nicolasperaltait/zero-trust-remote-access) (este repo)
-- [Backups That Don't Lie](https://github.com/Nicolasperaltait/backups-that-dont-lie)
-- [Alerts That Matter](https://github.com/Nicolasperaltait/alerts-that-matter)
 - [Network Segmentation Playbook](https://github.com/Nicolasperaltait/network-segmentation-playbook)
+- [Alerts That Matter](https://github.com/Nicolasperaltait/alerts-that-matter)
+- [Backups That Don't Lie](https://github.com/Nicolasperaltait/backups-that-dont-lie)
 - [Hypervisor as Control Plane](https://github.com/Nicolasperaltait/hypervisor-as-control-plane)
 
 ## Licencia
