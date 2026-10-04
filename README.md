@@ -17,6 +17,25 @@ puertos al borde, y un enfoque de minimo privilegio aplicado a asistentes de
 IA que participan de tareas de operacion, donde la restriccion vive en la
 infraestructura y no en la buena conducta del agente.
 
+## En 30 segundos
+
+| Indicador | Resultado |
+|---|---|
+| Puertos entrantes abiertos | **0**: cada nodo sale hacia el plano de control |
+| Caminos de acceso para agentes de IA | **1**, con interruptor manual fuera de su alcance |
+| Pruebas negativas del privilegio del agente | **3 de 3 denegadas** (lector generico, interprete, material de otro agente) |
+| Permiso total que tenia el agente y realmente uso | **ninguno**: la lista final salio de medir el uso real |
+| Intentos no autorizados frenados por la politica en un solo incidente | **13.017** ([detalle](https://github.com/Nicolasperaltait/network-segmentation-playbook/blob/main/docs/02-resultados-medidos.md)) |
+
+```mermaid
+flowchart LR
+    OP[Operador] -->|clave por equipo| M{Politica de la malla<br/>deny por defecto}
+    AG[Agente de IA] -->|unico camino| J[Host de salto]
+    SW[Interruptor manual<br/>en el hipervisor] -.->|enciende / apaga| J
+    J -->|credenciales confinadas,<br/>restringidas por origen| M
+    M -->|permisos por puerto| H[Hosts]
+```
+
 ## Indice
 
 - [Ficha rapida para quien evalua](contexto.md)

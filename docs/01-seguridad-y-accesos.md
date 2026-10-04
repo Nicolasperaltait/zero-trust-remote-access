@@ -70,6 +70,9 @@ Decisiones del modelo actual:
   aunque tenga credenciales validas si un nodo firmante no lo autoriza
 - la publicacion de servicios hacia internet que ofrece la malla esta
   prohibida
+- **la politica se probo con un incidente real:** un cliente mal configurado
+  intento 13.017 conexiones no permitidas en 34 horas y ninguna paso
+  ([detalle](https://github.com/Nicolasperaltait/network-segmentation-playbook/blob/main/docs/02-resultados-medidos.md))
 - las claves de nodo vencen; el vencimiento esta registrado con fecha para
   que no caduquen todas juntas
 - una auditoria periodica del estado de la malla emite una metrica, y la
@@ -108,6 +111,18 @@ modelo de acceso de la persona**. Apagar uno no debe apagar el otro.
 | Trazabilidad por cuenta | los eventos van al SIEM distinguiendo que cuenta hizo cada cosa |
 | Acceso de solo lectura al codigo | el agente lee el remoto de codigo con un token de solo lectura que vive en el host de salto; la escritura esta probada como rechazada |
 | Sin via de emergencia | decision explicita: si el host esta apagado, se pide encenderlo |
+
+```mermaid
+flowchart TB
+    subgraph Antes
+        A1[Agente] -->|claves en la estacion del operador| H1[Cada host]
+    end
+    subgraph Ahora
+        A2[Agente] --> J2[Host de salto]
+        J2 -->|unico camino| H2[Hosts]
+        OP2[Operador] -.->|interruptor| J2
+    end
+```
 
 ### Lectura privilegiada sin escritura
 
