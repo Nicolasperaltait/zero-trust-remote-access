@@ -94,7 +94,7 @@ en piezas, encendida 24/7. Cada repo de la serie se lee solo; la portada los une
 - [Alerts That Matter](https://github.com/Nicolasperaltait/alerts-that-matter)
 - [Backups That Don't Lie](https://github.com/Nicolasperaltait/backups-that-dont-lie)
 - [Hypervisor as Control Plane](https://github.com/Nicolasperaltait/hypervisor-as-control-plane)
-- [SecOps in Production](https://github.com/Nicolasperaltait/secops-in-production)
+- [SecOps Governance Blueprint](https://github.com/Nicolasperaltait/secops-governance-blueprint)
 
 ## Licencia
 
