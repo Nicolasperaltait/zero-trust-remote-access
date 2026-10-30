@@ -103,6 +103,7 @@ en piezas, encendida 24/7. Cada repo de la serie se lee solo; la portada los une
 - [Backups That Don't Lie](https://github.com/Nicolasperaltait/backups-that-dont-lie)
 - [Hypervisor as Control Plane](https://github.com/Nicolasperaltait/hypervisor-as-control-plane)
 - [SecOps Governance Blueprint](https://github.com/Nicolasperaltait/secops-governance-blueprint)
+- [Patch Ready by Six](https://github.com/Nicolasperaltait/patch-ready-by-six)
 
 ## Licencia
 
